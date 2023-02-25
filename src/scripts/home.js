@@ -24,7 +24,9 @@ if (hora < 10){
     hora = '0' + hora;
 }
 var min = dt.getMinutes();
-
+if (min < 10){
+    min = '0' + min;
+}
 const tempo = `${hora}:${min}`;
 const time = document.querySelector('#time');
 time.textContent = tempo;

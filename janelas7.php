@@ -58,25 +58,28 @@
     ></item-box>
 
     <?php }; ?>
-    
+    <div class="itemHidden" id="createFolder">
+            <img src="https://cdn-icons-png.flaticon.com/512/2889/2889314.png" alt="" class="iconHidden">
+        <form action="options.php" method="post">
+            <input type="text" name="name" placeholder="Nova Pasta" class="cadfolder"> 
+            <input class="foldersubmit" type="submit" name="selct" value="novaPasta"> 
+        </form>
+    </div>
+
     <div class="optionscontainer" id="menuopt">
        <div class="optionsmenu">
            
            <form action="options.php" method="post">
                 <button class="option" onclick="location.reload()">Atualizar</button>
-                <button class="option "  name="selct" type="submit" value="novaPasta">Nova Pasta</button>
+                <button class="option "  name="selct" onclick="createFolder()" value="novaPasta">Nova Pasta</button>
                 <button class="option"  name="selct" type="submit" value="Editar">Editar</button>
                 <button class="option"  name="selct" type="submit" value="Excluir">Excluir</button>
             </form>
        </div>
     </div>
+
+    
   </section>
-
-
-
-
-
-
         <section class="bar">
             
             <div class="btwindows"></div>

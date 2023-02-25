@@ -3,11 +3,15 @@
 
     include 'config.php';
 
+    $selct = $_POST['selct'];
 
     switch($selct){
 
         case 'novaPasta':
-            echo '<item-box></item-box>';
+            
+            $name = $_POST['name'];
+            $cad = "INSERT INTO folder (name) VALUES ('$name')";
+            $exec = mysqli_query($conn,$cad);
             break;
         case 'Editar':
             echo 'edit';
